@@ -29,3 +29,14 @@ Permitir al usuario escribir mensajes desde el teclado.
 Enviar los mensajes al servidor.
 Recibir y mostrar la respuesta del servidor
 El cliente puede finalizar la comunicación escribiendo la palabra “salir”.
+
+Protocolo TCP/IP
+En este proyecto se utiliza el protocolo TCP (Transmission Control Protocol), el cual forma parte del modelo TCP/IP, ampliamente usado para la comunicación en redes e Internet.
+TCP es un protocolo orientado a conexión, lo que significa que antes de intercambiar datos se debe establecer una conexión segura entre el cliente y el servidor.
+
+Funcionamiento del Protocolo TCP en el Proyecto
+El servidor crea un socket TCP y se queda a la espera de conexiones en un puerto específico.
+El cliente solicita una conexión al servidor usando su dirección IP y el puerto configurado.
+TCP establece la conexión asegurando que ambos extremos estén sincronizados.
+Se realiza el intercambio de mensajes entre cliente y servidor.
+Cuando el cliente termina, la conexión se cierra de forma ordenada.
